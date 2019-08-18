@@ -1,16 +1,5 @@
-/* Table of content  
----------------------------------------------------
-01. Body
-02. Typogaphy
-03. Header
-04. Sections
-05. Inner Pages
-06. Footer
-07. Utilities
-08. Responsive
---------------------------------------------------- */
-/* 01. Body 
---------------------------------------------------- */
+
+
 /* Global */
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,700,800|Roboto+Condensed:400,700");
 @import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
@@ -388,3 +377,27 @@ strong {
     background-size: 4px 50px;
     color: #fff;
   }
+
+
+@media screen and (max-width: 960px) {
+.blog-layout-one{
+  padding: 15px;
+}
+.text h1,
+.main-content .text a.post-link{
+  font-size: 30px;
+
+}
+}
+
+@media screen and (max-width: 480px) {
+.blog-layout-one{
+  padding: 15px;
+}
+.text h1,
+.main-content .text a.post-link{
+  font-size: 26px;
+
+}
+}
+

@@ -1,4 +1,4 @@
-title: E Theme
+title: Raji's blog
 author: GitHub User
 email: your-email@domain.com
 description: > # this means to ignore newlines until "show_exerpts:"
@@ -16,7 +16,7 @@ sass:
 permalink: /posts/:title/
 Raji:
   title: Mohammed Raji
-  tagline: Full stack devoloper, open source and JavaScript Lover
+  tagline: Web developer and open source software enthusiast.
   date_format: "%b %-d, %Y"
   style: black
   showNav: false
