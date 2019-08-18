@@ -9,12 +9,18 @@ The first step is the choose the right software to make the mission,  I choose [
 
 ### 1. Design the Icon
 
-Now let’s start the work,this tutorial require initial knowledge on inkscape because we don't learn icon designing, open the inkscape. choose file>document prorperties and customize size to 20*20 px.
+Now let's start working, this tutorial requires initial knowledge on inkscape because we will not learn icons Design, open inkscape. choose file>document prorperties and customize size to 20*20 px.
 
 
 ![Change document prorperties]({{ site.baseurl }}/assets/img/posts/document__pro.png)
 
-### 2. Transform icon to font
+In this tutorial we design only two icons.
+
+![icon]({{ site.baseurl }}/assets/img/posts/icon.png)
+
+After you design your icons, go to the next step.
+
+### 2. Transform icons to font
 #### 2.1. Import icon to fontforge
 
 After designing the icons, next step is transform the svg icon to icon font, for this task we open fontforge and import the each svg icon to chosen glyph slot where you want to add the icon you just designed.  you’ll need to go to File > Import.
