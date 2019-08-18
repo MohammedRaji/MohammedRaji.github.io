@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-08-18T21:55:12+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">E Theme</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+</subtitle><author><name>GitHub User</name></author><entry><title type="html">The Definitive guide to create an icon font using open source software</title><link href="http://localhost:4000/posts/The-Definitive-guide-to-create-an-icon-font/" rel="alternate" type="text/html" title="The Definitive guide to create an icon font using open source software" /><published>2019-08-18T16:59:30+01:00</published><updated>2019-08-18T16:59:30+01:00</updated><id>http://localhost:4000/posts/The%20Definitive%20guide%20to%20create%20an%20icon%20font</id><content type="html" xml:base="http://localhost:4000/posts/The-Definitive-guide-to-create-an-icon-font/">&lt;p&gt;There are a lot of fonts that you can choose, but sometimes, you need something special, so the only way is to create it yourself.&lt;/p&gt;
+
+&lt;p&gt;The first step is the choose the right software to make the mission,  I choose &lt;a href=&quot;https://inkscape.com&quot;&gt;Inkscape&lt;/a&gt; and &lt;a href=&quot;http://fontforge.github.io/en-US/&quot;&gt;Fontforge&lt;/a&gt; for  two main reason, it is &lt;strong&gt;OPEN SOURCE&lt;/strong&gt; and &lt;strong&gt;POWERFUL&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;1-design-the-icon&quot;&gt;1. Design the Icon&lt;/h3&gt;
+
+&lt;p&gt;Now let’s start the work,this tutorial require initial knowledge on inkscape because we don’t learn icon designing, open the inkscape. choose file&amp;gt;document prorperties and customize size to 20*20 px.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/document__pro.png&quot; alt=&quot;Change document prorperties&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;2-transform-icon-to-font&quot;&gt;2. Transform icon to font&lt;/h3&gt;
+&lt;h4 id=&quot;21-import-icon-to-fontforge&quot;&gt;2.1. Import icon to fontforge&lt;/h4&gt;
+
+&lt;p&gt;After designing the icons, next step is transform the svg icon to icon font, for this task we open fontforge and import the each svg icon to chosen glyph slot where you want to add the icon you just designed.  you’ll need to go to File &amp;gt; Import.&lt;/p&gt;
+
+&lt;h4 id=&quot;22-save-your-icon-font&quot;&gt;2.2. Save your Icon Font&lt;/h4&gt;
+
+&lt;p&gt;Before saviang your icon font, you must set the font info, by going to Element &amp;gt; Font Info. after that save your icon font as *YourFontName.sfd.
+&lt;img src=&quot;/assets/img/posts/fontinfo.png&quot; alt=&quot;Font Info&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;23-export-your-font&quot;&gt;2.3. Export Your Font&lt;/h4&gt;
+&lt;p&gt;now generate font by clicking on File &amp;gt; generate font and select TTF (True Type Format).&lt;/p&gt;
+
+&lt;h3 id=&quot;3-use-the-icon-font-in-your-web-project&quot;&gt;3. Use the Icon Font in your web project&lt;/h3&gt;
+
+&lt;p&gt;After getting our icon font, it’s time to use it in your web project. But we have a big problem, browser compatibility. Because ttf is supportred by Mozilla and Safari only.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;CROSS-BROWSER COMPATIBILITY&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Internet Explorer supports EOT (and IE9 WOFF)&lt;/li&gt;
+  &lt;li&gt;Mozilla browsers support OTF, TTF (and FF3.6+ WOFF)&lt;/li&gt;
+  &lt;li&gt;Safari and Opera support OTF, TTF, SVG (and Safari5.1+, Opera11.10+ WOFF)&lt;/li&gt;
+  &lt;li&gt;Chrome supports TTF, SVG (and Chrome6.0+ WOFF)&lt;/li&gt;
+  &lt;li&gt;Mobile device browsers such as Safari want SVG only&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The solution is to create others font format (eot, woff, otf …).
+Manually by exporting each font format using FontForge, or simply using the  &lt;a href=&quot;https://transfonter.org/&quot;&gt;transfonter.org&lt;/a&gt; to generate css file and other font format.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/tranformer.png&quot; alt=&quot;transformer.org&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now open the css file and add this code to define all the icons names and their corresponding Unicode.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&quot;icon-&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&quot; icon-&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;'MRFont'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/*Icon font name*/&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;speak&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;none&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;font-style&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;normal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;font-weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;normal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;font-variant&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;normal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;text-transform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;none&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;line-height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;-webkit-font-smoothing&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;antialiased&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;-moz-osx-font-smoothing&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;grayscale&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;.icon-arrow-up&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:before&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;        &lt;span class=&quot;c&quot;&gt;/*&quot;icon-arrow-up&quot; is the name of icon  */&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&quot;\0001&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;          &lt;span class=&quot;c&quot;&gt;/*e200 is the Unicode, see the the next paragraph to learn how to get it*/&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;.icon-arrow-down&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:before&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&quot;\0002&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;and save it like this “mrfont.css”&lt;/p&gt;
+
+&lt;h5 id=&quot;get-the-unicode&quot;&gt;Get the Unicode:&lt;/h5&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/unicode.png&quot; alt=&quot;getting the Unicode&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now use your font in your HTML file like this:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;stylesheet&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;mrfont.css&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;text/css&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;title&amp;gt;&lt;/span&gt;icon font toturial&lt;span class=&quot;nt&quot;&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;i&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;icon-arrow-up&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/i&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;i&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;icon-arrow-down&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/i&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;I hope this article gave you a clear overview of how to create icon font, and that you found it useful.&lt;/p&gt;</content><author><name>GitHub User</name></author><summary type="html">There are a lot of fonts that you can choose, but sometimes, you need something special, so the only way is to create it yourself.</summary></entry></feed>

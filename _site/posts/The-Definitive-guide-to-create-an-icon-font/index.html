@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/uikit.min.css">
+
+
+<link rel="stylesheet" href="/assets/css/style.css">
+<title>The Definitive guide to create an icon font using open source software</title>
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>The Definitive guide to create an icon font using open source software | E Theme</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="The Definitive guide to create an icon font using open source software" />
+<meta name="author" content="GitHub User" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="There are a lot of fonts that you can choose, but sometimes, you need something special, so the only way is to create it yourself." />
+<meta property="og:description" content="There are a lot of fonts that you can choose, but sometimes, you need something special, so the only way is to create it yourself." />
+<link rel="canonical" href="http://localhost:4000/posts/The-Definitive-guide-to-create-an-icon-font/" />
+<meta property="og:url" content="http://localhost:4000/posts/The-Definitive-guide-to-create-an-icon-font/" />
+<meta property="og:site_name" content="E Theme" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-08-18T16:59:30+01:00" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","dateModified":"2019-08-18T16:59:30+01:00","datePublished":"2019-08-18T16:59:30+01:00","headline":"The Definitive guide to create an icon font using open source software","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/The-Definitive-guide-to-create-an-icon-font/"},"url":"http://localhost:4000/posts/The-Definitive-guide-to-create-an-icon-font/","author":{"@type":"Person","name":"GitHub User"},"description":"There are a lot of fonts that you can choose, but sometimes, you need something special, so the only way is to create it yourself.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+</head>
+<body>
+  <header id="hero-header" class="Raji-black" style="background-image: url('/assets/img/sample2.png')">
+    <div id="change-her-the-bg-image" class="uk-background-norepeat uk-background-cover uk-background-center-center uk-background-image@s uk-section uk-section-large uk-flex uk-flex-middle" uk-parallax="bgx: 0,-60" uk-height viewport="offset-top: false" style="background: linear-gradient(to right, rgba(30, 75, 115, 0.9), rgba(255, 255, 255, 0))"><div class="uk-container">
+		<div class=" text uk-width-2-3 ">
+
+	<h1>The Definitive guide to create an icon font using open source software</h1><div class="post-date" style="margin-top:20px">
+		Published on Aug 18, 2019
+	</div>
+	<ul class="post-tags"></ul>
+	</div>
+</div>
+
+</div>
+
+  </header>
+  <main>
+    <div class="uk-container">
+        <div class="uk-flex uk-margin">
+            <div class="main__text uk-margin-auto uk-margin-auto-vertical uk-width-3-4@s">
+                <p>There are a lot of fonts that you can choose, but sometimes, you need something special, so the only way is to create it yourself.</p>
+
+<p>The first step is the choose the right software to make the mission,  I choose <a href="https://inkscape.com">Inkscape</a> and <a href="http://fontforge.github.io/en-US/">Fontforge</a> for  two main reason, it is <strong>OPEN SOURCE</strong> and <strong>POWERFUL</strong>.</p>
+
+<h3 id="1-design-the-icon">1. Design the Icon</h3>
+
+<p>Now let’s start the work,this tutorial require initial knowledge on inkscape because we don’t learn icon designing, open the inkscape. choose file&gt;document prorperties and customize size to 20*20 px.</p>
+
+<p><img src="/assets/img/posts/document__pro.png" alt="Change document prorperties" /></p>
+
+<h3 id="2-transform-icon-to-font">2. Transform icon to font</h3>
+<h4 id="21-import-icon-to-fontforge">2.1. Import icon to fontforge</h4>
+
+<p>After designing the icons, next step is transform the svg icon to icon font, for this task we open fontforge and import the each svg icon to chosen glyph slot where you want to add the icon you just designed.  you’ll need to go to File &gt; Import.</p>
+
+<h4 id="22-save-your-icon-font">2.2. Save your Icon Font</h4>
+
+<p>Before saviang your icon font, you must set the font info, by going to Element &gt; Font Info. after that save your icon font as *YourFontName.sfd.
+<img src="/assets/img/posts/fontinfo.png" alt="Font Info" /></p>
+
+<h4 id="23-export-your-font">2.3. Export Your Font</h4>
+<p>now generate font by clicking on File &gt; generate font and select TTF (True Type Format).</p>
+
+<h3 id="3-use-the-icon-font-in-your-web-project">3. Use the Icon Font in your web project</h3>
+
+<p>After getting our icon font, it’s time to use it in your web project. But we have a big problem, browser compatibility. Because ttf is supportred by Mozilla and Safari only.</p>
+
+<p><strong>CROSS-BROWSER COMPATIBILITY</strong></p>
+<ul>
+  <li>Internet Explorer supports EOT (and IE9 WOFF)</li>
+  <li>Mozilla browsers support OTF, TTF (and FF3.6+ WOFF)</li>
+  <li>Safari and Opera support OTF, TTF, SVG (and Safari5.1+, Opera11.10+ WOFF)</li>
+  <li>Chrome supports TTF, SVG (and Chrome6.0+ WOFF)</li>
+  <li>Mobile device browsers such as Safari want SVG only</li>
+</ul>
+
+<p>The solution is to create others font format (eot, woff, otf …).
+Manually by exporting each font format using FontForge, or simply using the  <a href="https://transfonter.org/">transfonter.org</a> to generate css file and other font format.</p>
+
+<p><img src="/assets/img/posts/tranformer.png" alt="transformer.org" /></p>
+
+<p>Now open the css file and add this code to define all the icons names and their corresponding Unicode.</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="o">[</span><span class="nt">class</span><span class="o">^=</span><span class="s1">"icon-"</span><span class="o">],</span> <span class="o">[</span><span class="nt">class</span><span class="o">*=</span><span class="s1">" icon-"</span><span class="o">]</span> <span class="p">{</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="s2">'MRFont'</span><span class="p">;</span> <span class="c">/*Icon font name*/</span>
+  <span class="nl">speak</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="nl">font-style</span><span class="p">:</span> <span class="nb">normal</span><span class="p">;</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">normal</span><span class="p">;</span>
+  <span class="nl">font-variant</span><span class="p">:</span> <span class="nb">normal</span><span class="p">;</span>
+  <span class="nl">text-transform</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="nl">line-height</span><span class="p">:</span> <span class="m">1</span><span class="p">;</span>
+  <span class="nl">-webkit-font-smoothing</span><span class="p">:</span> <span class="n">antialiased</span><span class="p">;</span>
+  <span class="nl">-moz-osx-font-smoothing</span><span class="p">:</span> <span class="n">grayscale</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.icon-arrow-up</span><span class="nd">:before</span> <span class="p">{</span>        <span class="c">/*"icon-arrow-up" is the name of icon  */</span>
+  <span class="nl">content</span><span class="p">:</span> <span class="s1">"\0001"</span><span class="p">;</span>          <span class="c">/*e200 is the Unicode, see the the next paragraph to learn how to get it*/</span>
+<span class="p">}</span>
+<span class="nc">.icon-arrow-down</span><span class="nd">:before</span> <span class="p">{</span>
+  <span class="nl">content</span><span class="p">:</span> <span class="s1">"\0002"</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>and save it like this “mrfont.css”</p>
+
+<h5 id="get-the-unicode">Get the Unicode:</h5>
+
+<p><img src="/assets/img/posts/unicode.png" alt="getting the Unicode" /></p>
+
+<p>Now use your font in your HTML file like this:</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;html&gt;</span>
+    <span class="nt">&lt;head&gt;</span>
+      <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"mrfont.css"</span> <span class="na">type=</span><span class="s">"text/css"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;title&gt;</span>icon font toturial<span class="nt">&lt;/title&gt;</span>
+    <span class="nt">&lt;/head&gt;</span>
+    <span class="nt">&lt;body&gt;</span>
+      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon-arrow-up"</span><span class="nt">&gt;&lt;/i&gt;</span>
+      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon-arrow-down"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span></code></pre></figure>
+
+<p>I hope this article gave you a clear overview of how to create icon font, and that you found it useful.</p>
+
+<div class="social-footer-share">
+    <div class="social-footer-buttons">
+    <div class="social-button-holder">
+    <a class="social social-facebook" href="http://www.facebook.com/sharer.php?u=http://localhost:4000/posts/The-Definitive-guide-to-create-an-icon-font/" target="_blank">
+    <span class="social-icon">
+    <i class="icon-facebook uk-icon" uk-icon="icon: facebook"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="facebook"><path d="M11,10h2.6l0.4-3H11V5.3c0-0.9,0.2-1.5,1.5-1.5H14V1.1c-0.3,0-1-0.1-2.1-0.1C9.6,1,8,2.4,8,5v2H5.5v3H8v8h3V10z"></path></svg></i>
+    <span class="social-text">Share</span>
+    </span>
+    </a>
+    </div>
+    <div class="social-button-holder">
+    <a class="social social-twitter" href="https://twitter.com/intent/tweet?url=http://localhost:4000/posts/The-Definitive-guide-to-create-an-icon-font/" target="_blank">
+    <span class="social-icon">
+    <i class="icon-twitter uk-icon" uk-icon="icon: twitter"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="twitter"><path d="M19,4.74 C18.339,5.029 17.626,5.229 16.881,5.32 C17.644,4.86 18.227,4.139 18.503,3.28 C17.79,3.7 17.001,4.009 16.159,4.17 C15.485,3.45 14.526,3 13.464,3 C11.423,3 9.771,4.66 9.771,6.7 C9.771,6.99 9.804,7.269 9.868,7.539 C6.795,7.38 4.076,5.919 2.254,3.679 C1.936,4.219 1.754,4.86 1.754,5.539 C1.754,6.82 2.405,7.95 3.397,8.61 C2.79,8.589 2.22,8.429 1.723,8.149 L1.723,8.189 C1.723,9.978 2.997,11.478 4.686,11.82 C4.376,11.899 4.049,11.939 3.713,11.939 C3.475,11.939 3.245,11.919 3.018,11.88 C3.49,13.349 4.852,14.419 6.469,14.449 C5.205,15.429 3.612,16.019 1.882,16.019 C1.583,16.019 1.29,16.009 1,15.969 C2.635,17.019 4.576,17.629 6.662,17.629 C13.454,17.629 17.17,12 17.17,7.129 C17.17,6.969 17.166,6.809 17.157,6.649 C17.879,6.129 18.504,5.478 19,4.74"></path></svg></i>
+    <span class="social-text">Tweet</span>
+    </span>
+    </a>
+    </div>
+    <div class="social-button-holder">
+    <a class="social social-whatsapp" href="https://wa.me/?text=http://localhost:4000/posts/The-Definitive-guide-to-create-an-icon-font/" target="_blank">
+    <span class="social-icon">
+    <i class="icon-whatsapp uk-icon" uk-icon="icon: whatsapp"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="whatsapp"><path d="M16.7,3.3c-1.8-1.8-4.1-2.8-6.7-2.8c-5.2,0-9.4,4.2-9.4,9.4c0,1.7,0.4,3.3,1.3,4.7l-1.3,4.9l5-1.3c1.4,0.8,2.9,1.2,4.5,1.2 l0,0l0,0c5.2,0,9.4-4.2,9.4-9.4C19.5,7.4,18.5,5,16.7,3.3 M10.1,17.7L10.1,17.7c-1.4,0-2.8-0.4-4-1.1l-0.3-0.2l-3,0.8l0.8-2.9 l-0.2-0.3c-0.8-1.2-1.2-2.7-1.2-4.2c0-4.3,3.5-7.8,7.8-7.8c2.1,0,4.1,0.8,5.5,2.3c1.5,1.5,2.3,3.4,2.3,5.5 C17.9,14.2,14.4,17.7,10.1,17.7 M14.4,11.9c-0.2-0.1-1.4-0.7-1.6-0.8c-0.2-0.1-0.4-0.1-0.5,0.1c-0.2,0.2-0.6,0.8-0.8,0.9 c-0.1,0.2-0.3,0.2-0.5,0.1c-0.2-0.1-1-0.4-1.9-1.2c-0.7-0.6-1.2-1.4-1.3-1.6c-0.1-0.2,0-0.4,0.1-0.5C8,8.8,8.1,8.7,8.2,8.5 c0.1-0.1,0.2-0.2,0.2-0.4c0.1-0.2,0-0.3,0-0.4C8.4,7.6,7.9,6.5,7.7,6C7.5,5.5,7.3,5.6,7.2,5.6c-0.1,0-0.3,0-0.4,0 c-0.2,0-0.4,0.1-0.6,0.3c-0.2,0.2-0.8,0.8-0.8,2c0,1.2,0.8,2.3,1,2.4c0.1,0.2,1.7,2.5,4,3.5c0.6,0.2,1,0.4,1.3,0.5 c0.6,0.2,1.1,0.2,1.5,0.1c0.5-0.1,1.4-0.6,1.6-1.1c0.2-0.5,0.2-1,0.1-1.1C14.8,12.1,14.6,12,14.4,11.9"></path></svg></i>
+    <span class="social-text">send</span>
+    </span>
+    </a>
+    </div>
+    
+    <div class="social-button-holder">
+    <a class="social social-email" href="mailto:?subject=http://localhost:4000/posts/The-Definitive-guide-to-create-an-icon-font/" target="_blank">
+    <span class="social-icon">
+    <i class="icon-mail uk-icon" uk-icon="icon:mail"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="mail"><polyline fill="none" stroke="#000" points="1.4,6.5 10,11 18.6,6.5"></polyline><path d="M 1,4 1,16 19,16 19,4 1,4 Z M 18,15 2,15 2,5 18,5 18,15 Z"></path></svg></i>
+    <span class="social-text">Share</span>
+    </span>
+    </a>
+    </div>
+    </div>
+    </div></div>
+
+
+            
+      </div>
+
+        <!-- Configure Disqus --></div>
+  </main>
+<div class="uk-container footer__notes">
+    
+    <br>
+    <br>
+    <p>                    
+        <strong>©2019 Copyright <a href="http://localhost:4000">Mohammed Raji</a>. All rights reserved.</strong>
+	</p>
+	<p class="footer-follow">
+	    Follow me on 
+	    <a href="https://twitter.com/umussih" target="_blank">Twitter</a>, 
+        <a href="https://github.com/MohammedRaji" target="_blank">Github</a>, 
+        and <a href="https://www.instagram.com/uumusih" target="_blank">Instagram</a>.
+    </p>
+    <p class="site__info">
+        This site is built with <a href="http://jekyllrb.com/">jekyll</a> and hosted on <a href="https://pages.github.com/">github pages</a>.
+	<br>
+        Made with love by <a href="">EnterStudios</a>.
+    </p>
+
+
+</div></body>
+</html>

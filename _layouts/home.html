@@ -1,0 +1,33 @@
+---
+layout: page
+---
+
+<div class="main-content uk-container">
+{%- if site.posts.size > 0 -%}
+<div class="row">
+<div classs="uk-width-auto">
+	{%- for post in site.posts -%}
+		{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+		
+<div class="blog-layout-one blog-item">
+		<div class="text uk-text-middle">
+			<h3><a class="post-link" href="{{ post.url | relative_url }}">{{post.title}}</a></h3>
+			<div class="meta-info">
+				<span>posted on {{ post.date | date: date_format }}</span>
+					
+			</div>
+		</div>
+		
+	</div>
+	
+		
+	{%- endfor -%}
+</div>
+</div>
+{%- endif -%}
+</div>
+
+
+
+
+

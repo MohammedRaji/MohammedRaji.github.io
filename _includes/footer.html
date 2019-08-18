@@ -1,0 +1,34 @@
+
+<div class="uk-container footer__notes">
+    
+    <br>
+    <br>
+    <p>                    
+        <strong>©2019 Copyright <a href="{{site.url}}">{{site.Raji.title}}</a>. All rights reserved.</strong>
+	</p>
+	<p class="footer-follow">
+	    Follow me on 
+	    <a href="https://twitter.com/{{site.Raji.social_links.twitter}}" target="_blank">Twitter</a>, 
+        <a href="https://github.com/{{site.Raji.social_links.github}}" target="_blank">Github</a>, 
+        and <a href="https://www.instagram.com/{{site.Raji.social_links.instagram}}" target="_blank">Instagram</a>.
+    </p>
+    <p class="site__info">
+        This site is built with <a href="http://jekyllrb.com/">jekyll</a> and hosted on <a href="https://pages.github.com/">github pages</a>.
+	<br>
+        Made with love by <a href="">EnterStudios</a>.
+    </p>
+
+
+</div>
+
+{%- if site.Raji.analytics_id -%}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.Raji.analytics_id }}"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag() { dataLayer.push(arguments); }
+	gtag('js', new Date());
+
+	gtag('config', '{{ site.Raji.analytics_id }}');
+</script>
+{%- endif -%}
+
