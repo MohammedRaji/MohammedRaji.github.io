@@ -4,6 +4,9 @@
   {%- include head.html -%}
 </head>
 <body>
+    
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v4.0"></script>
   <header id="hero-header" class="Raji-{{ site.Raji.style }}" style="background-image: url('{{ site.baseurl }}/assets/img/sample2.png')">
     <div id="change-her-the-bg-image" class="uk-background-norepeat uk-background-cover uk-background-center-center uk-background-image@s uk-section uk-section-large uk-flex uk-flex-middle" uk-parallax="bgx: 0,-60" uk-height viewport="offset-top: false" style="background: linear-gradient(to right, rgba(30, 75, 115, 0.9), rgba(255, 255, 255, 0))">
       {%- include nav.html -%}
@@ -18,6 +21,8 @@
                 {{ content }}
 
                 {%- include share.html-%}  
+
+                <div class="fb-comments" data-href="https://mohammedraji.github.io/" data-width="100%" data-numposts="7"></div>
               </div>
 
 

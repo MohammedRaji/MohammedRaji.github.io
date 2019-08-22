@@ -1,5 +1,62 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-08-18T23:07:16+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Raji’s blog</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-</subtitle><author><name>GitHub User</name></author><entry><title type="html">The Definitive guide to create an icon font using open source software</title><link href="http://localhost:4000/posts/The-Definitive-guide-to-create-an-icon-font/" rel="alternate" type="text/html" title="The Definitive guide to create an icon font using open source software" /><published>2019-08-18T16:59:30+01:00</published><updated>2019-08-18T16:59:30+01:00</updated><id>http://localhost:4000/posts/The%20Definitive%20guide%20to%20create%20an%20icon%20font</id><content type="html" xml:base="http://localhost:4000/posts/The-Definitive-guide-to-create-an-icon-font/">&lt;p&gt;There are a lot of fonts that you can choose, but sometimes, you need something special, so the only way is to create it yourself.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-08-22T22:27:01+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Raji’s blog</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+</subtitle><author><name>GitHub User</name></author><entry><title type="html">WordPress Learning Challenge (Part 1)</title><link href="http://localhost:4000/posts/super-long-article/" rel="alternate" type="text/html" title="WordPress Learning Challenge (Part 1)" /><published>2019-08-22T09:59:30+01:00</published><updated>2019-08-22T09:59:30+01:00</updated><id>http://localhost:4000/posts/super-long-article</id><content type="html" xml:base="http://localhost:4000/posts/super-long-article/">&lt;p&gt;It’s the time to move to next level in my web development career, after learning HTML/CSS and JS. Now it’s the of WordPress. Chalenge is that 30 Days everyday I learn something and I write about it. from scratch to mastring WordPress theme development. it’s first day, let’s start by what I learned.&lt;/p&gt;
+
+&lt;h3 id=&quot;1-setup-a-local-wordpress-development-environment&quot;&gt;1. Setup a Local WordPress Development Environment.&lt;/h3&gt;
+&lt;p&gt;NB: I use debian linux distribution operating system, if using &lt;strong&gt;windows&lt;/strong&gt; or other Linux Destribution, serch how to setup your local development environment. on &lt;strong&gt;Google&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;let’s go :)&lt;/p&gt;
+&lt;h4 id=&quot;step-1--installing-apache&quot;&gt;Step 1 — Installing Apache&lt;/h4&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-terminal&quot; data-lang=&quot;terminal&quot;&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt update
+&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;apache2&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h4 id=&quot;step-2---installing-mysql&quot;&gt;Step 2 —  Installing Mysql&lt;/h4&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-terminal&quot; data-lang=&quot;terminal&quot;&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;mysql-server mysql-client mysql-common mysql-server-core-&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; mysql-client-core-&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h4 id=&quot;step-3---installing-php&quot;&gt;Step 3 —  Installing PHP&lt;/h4&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-terminal&quot; data-lang=&quot;terminal&quot;&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;php libapache2-mod-php php-mysql&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Now you can test whether your web server is able to correctly display content generated by this PHP script. To try this out, visit this page in your web browser. You’ll need your server’s public IP address again.&lt;/p&gt;
+
+&lt;p&gt;The address you will want to visit is:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;http://127.0.0.1/info.php&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h4 id=&quot;step-4---installing-wordpress&quot;&gt;Step 4 —  Installing WordPress&lt;/h4&gt;
+&lt;p&gt;Go to WordPress Downloads &lt;a href=&quot;https://wordpress.org/download/&quot;&gt;page&lt;/a&gt;, and download WordPress.
+Extrat Downloaded .zip file  in &lt;code class=&quot;highlighter-rouge&quot;&gt;/var/www/html&lt;/code&gt; folder and go to &lt;code class=&quot;highlighter-rouge&quot;&gt;http://127.0.0.1/wordpress&lt;/code&gt; and Start installing.&lt;/p&gt;
+
+&lt;p&gt;Oh I forgot you should create a database first, by executing these commands on Terminal:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-terminal&quot; data-lang=&quot;terminal&quot;&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt; mysql &lt;span class=&quot;nt&quot;&gt;-u&lt;/span&gt; root &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Put your MySQL password, and then create a database, in this case I named it &lt;code class=&quot;highlighter-rouge&quot;&gt;word&lt;/code&gt; with this command.
+&lt;code class=&quot;highlighter-rouge&quot;&gt;CREATE DATABASE word;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;thene click &lt;strong&gt;Let’s go!&lt;/strong&gt; button.&lt;/p&gt;
+
+&lt;p&gt;you get the form bellow:&lt;/p&gt;
+
+&lt;p&gt;This page requires Database Name (the database you’ve created earlier). Username and Password of your MySQL.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/1/install.png&quot; alt=&quot;installation&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Hit “Submit” button at the bottom and click “Run the installation” on the very next page.
+&lt;img src=&quot;/assets/img/posts/1/run.png&quot; alt=&quot;installation&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Complete installation with admin information by Giving your site a title, username, password, and email address. Finally hit the “Install WordPress” button at the bottom.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/1/setup-new.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You have successfully installed WordPress on your computer. Log into your site now.
+&lt;img src=&quot;/assets/img/posts/1/log.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;the admin panel :
+&lt;img src=&quot;/assets/img/posts/1/admin-pa.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Congratulation your installation is done, If you encounter any problems with the installation, you can leave it in a comment.&lt;/p&gt;</content><author><name>GitHub User</name></author><summary type="html">It’s the time to move to next level in my web development career, after learning HTML/CSS and JS. Now it’s the of WordPress. Chalenge is that 30 Days everyday I learn something and I write about it. from scratch to mastring WordPress theme development. it’s first day, let’s start by what I learned. 1. Setup a Local WordPress Development Environment. NB: I use debian linux distribution operating system, if using windows or other Linux Destribution, serch how to setup your local development environment. on Google. let’s go :) Step 1 — Installing Apache $ sudo apt update $ sudo apt install apache2 Step 2 — Installing Mysql $ sudo apt install mysql-server mysql-client mysql-common mysql-server-core-* mysql-client-core-* Step 3 — Installing PHP $ sudo apt install php libapache2-mod-php php-mysql Now you can test whether your web server is able to correctly display content generated by this PHP script. To try this out, visit this page in your web browser. You’ll need your server’s public IP address again. The address you will want to visit is: http://127.0.0.1/info.php Step 4 — Installing WordPress Go to WordPress Downloads page, and download WordPress. Extrat Downloaded .zip file in /var/www/html folder and go to http://127.0.0.1/wordpress and Start installing. Oh I forgot you should create a database first, by executing these commands on Terminal: $ mysql -u root -p Put your MySQL password, and then create a database, in this case I named it word with this command. CREATE DATABASE word; thene click Let’s go! button. you get the form bellow: This page requires Database Name (the database you’ve created earlier). Username and Password of your MySQL. Hit “Submit” button at the bottom and click “Run the installation” on the very next page. Complete installation with admin information by Giving your site a title, username, password, and email address. Finally hit the “Install WordPress” button at the bottom. You have successfully installed WordPress on your computer. Log into your site now. the admin panel : Congratulation your installation is done, If you encounter any problems with the installation, you can leave it in a comment.</summary></entry><entry><title type="html">The Definitive guide to create an icon font using open source software</title><link href="http://localhost:4000/posts/The-Definitive-guide-to-create-an-icon-font/" rel="alternate" type="text/html" title="The Definitive guide to create an icon font using open source software" /><published>2019-08-18T16:59:30+01:00</published><updated>2019-08-18T16:59:30+01:00</updated><id>http://localhost:4000/posts/The%20Definitive%20guide%20to%20create%20an%20icon%20font</id><content type="html" xml:base="http://localhost:4000/posts/The-Definitive-guide-to-create-an-icon-font/">&lt;p&gt;There are a lot of fonts that you can choose, but sometimes, you need something special, so the only way is to create it yourself.&lt;/p&gt;
 
 &lt;p&gt;The first step is the choose the right software to make the mission,  I choose &lt;a href=&quot;https://inkscape.com&quot;&gt;Inkscape&lt;/a&gt; and &lt;a href=&quot;http://fontforge.github.io/en-US/&quot;&gt;Fontforge&lt;/a&gt; for  two main reason, it is &lt;strong&gt;OPEN SOURCE&lt;/strong&gt; and &lt;strong&gt;POWERFUL&lt;/strong&gt;.&lt;/p&gt;
 
