@@ -1,5 +1,65 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-08-22T22:44:49+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Raji’s blog</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-</subtitle><author><name>GitHub User</name></author><entry><title type="html">WordPress Learning Challenge (Part 1)</title><link href="http://localhost:4000/posts/worpress-challenge-part-1/" rel="alternate" type="text/html" title="WordPress Learning Challenge (Part 1)" /><published>2019-08-22T09:59:30+01:00</published><updated>2019-08-22T09:59:30+01:00</updated><id>http://localhost:4000/posts/worpress%20challenge%20part-1</id><content type="html" xml:base="http://localhost:4000/posts/worpress-challenge-part-1/">&lt;p&gt;It’s the time to move to next level in my web development career, after learning HTML/CSS and JS. Now it’s the of WordPress. Chalenge is that 30 Days everyday I learn something and I write about it. from scratch to mastring WordPress theme development. it’s first day, let’s start by what I learned.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-08-23T20:23:46+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Raji’s blog</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+</subtitle><author><name>GitHub User</name></author><entry><title type="html">WordPress Learning Challenge (Part 2)</title><link href="http://localhost:4000/posts/wordpress-challenge-part-2/" rel="alternate" type="text/html" title="WordPress Learning Challenge (Part 2) " /><published>2019-08-23T09:59:30+01:00</published><updated>2019-08-23T09:59:30+01:00</updated><id>http://localhost:4000/posts/wordpress-challenge-part-2</id><content type="html" xml:base="http://localhost:4000/posts/wordpress-challenge-part-2/">&lt;p&gt;After installing WordPress in previous &lt;a href=&quot;https://mohammedraji.github.io/posts/worpress-challenge-part-1&quot;&gt;part&lt;/a&gt;, It is time for us to start taking a close look at how themes are built and how they work.&lt;/p&gt;
+
+&lt;p&gt;Of course, the look of all themes is different. But if you were to download many 
+different WordPress themes and open the folders side by side, you’ll see the same hierarchy. There are a couple of required files and a number of files you will likely find in all themes.&lt;/p&gt;
+
+&lt;p&gt;the files is detailed in this picture.
+&lt;img src=&quot;/assets/img/posts/2/anatomy.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Most themes will include both the &lt;strong&gt;CORE&lt;/strong&gt; and &lt;strong&gt;STANDARD&lt;/strong&gt; files. The STANDARD
+files cover everything both you and your visitors will expect from a blog. Things like
+permalinked posts and pages, error catching, commenting, and organized archives.&lt;/p&gt;
+
+&lt;p&gt;But we starting build a theme who print this phrase “ site is under construction “ with only two CORE files, And a simple theme it would be!&lt;/p&gt;
+
+&lt;p&gt;let’s go, open a new folder &lt;code class=&quot;highlighter-rouge&quot;&gt;wp-challenge&lt;/code&gt; and add the two CORE files &lt;code class=&quot;highlighter-rouge&quot;&gt;index.php&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;style.css&lt;/code&gt; and a file named &lt;code class=&quot;highlighter-rouge&quot;&gt;screenshot.png&lt;/code&gt; with dimension &lt;code class=&quot;highlighter-rouge&quot;&gt;600px * 450px&lt;/code&gt; .&lt;/p&gt;
+
+&lt;p&gt;like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/2/files.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In the next step put this description at the top of your style.css file:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;c&quot;&gt;/*
+Theme Name: WordPress callenge    //your theme name here
+Theme URI: http://your-website.com/cool-theme/   //theme URL
+Description:  Awesome WordPress theme by me
+Version: 1 
+Author: Mohammed Raji       // Author name here
+Author URI: https://MohammedRaji.github.io  // Author URL
+Tags: super, awesome, cool, sweet, potato nuggets
+*/&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Now open &lt;code class=&quot;highlighter-rouge&quot;&gt;index.php&lt;/code&gt; file and put this code:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;?&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;php&lt;/span&gt; 
+&lt;span class=&quot;nt&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&quot; this site is under construction&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Let’s install the theme to your new local website.&lt;/p&gt;
+
+&lt;h4 id=&quot;installation-steps&quot;&gt;installation steps&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;To do it you should place the theme folder into &lt;code class=&quot;highlighter-rouge&quot;&gt;wordpress/wp-content/themes&lt;/code&gt; directory. 
+&lt;img src=&quot;/assets/img/posts/2/theme-install.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Login to your website’s Dashboard using your username and password and navigate to Appearance &amp;gt; Themes tab in the left column.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Now you can see the theme you’ve placed into &lt;code class=&quot;highlighter-rouge&quot;&gt;wp-content/themes&lt;/code&gt; folder in the list of available themes. Click Activate button in order to activate it on your site.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/2/costomize.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now view your first created site at this link &lt;code class=&quot;highlighter-rouge&quot;&gt;http://localhost/wordpress/&lt;/code&gt;
+&lt;img src=&quot;/assets/img/posts/2/final.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Congratulations&lt;/em&gt;&lt;/strong&gt; to you, you have created and installed the first WordPress theme, If you encounter any problems with the installation, you can leave it in a comment.&lt;/p&gt;</content><author><name>GitHub User</name></author><summary type="html">After installing WordPress in previous part, It is time for us to start taking a close look at how themes are built and how they work.</summary></entry><entry><title type="html">WordPress Learning Challenge (Part 1)</title><link href="http://localhost:4000/posts/worpress-challenge-part-1/" rel="alternate" type="text/html" title="WordPress Learning Challenge (Part 1)" /><published>2019-08-22T09:59:30+01:00</published><updated>2019-08-22T09:59:30+01:00</updated><id>http://localhost:4000/posts/worpress%20challenge%20part-1</id><content type="html" xml:base="http://localhost:4000/posts/worpress-challenge-part-1/">&lt;p&gt;It’s the time to move to next level in my web development career, after learning HTML/CSS and JS. Now it’s the of WordPress. Chalenge is that 30 Days everyday I learn something and I write about it. from scratch to mastring WordPress theme development. it’s first day, let’s start by what I learned.&lt;/p&gt;
 
 &lt;h3 id=&quot;1-setup-a-local-wordpress-development-environment&quot;&gt;1. Setup a Local WordPress Development Environment.&lt;/h3&gt;
 &lt;p&gt;NB: I use debian linux distribution operating system, if using &lt;strong&gt;windows&lt;/strong&gt; or other Linux Destribution, serch how to setup your local development environment. on &lt;strong&gt;Google&lt;/strong&gt;.&lt;/p&gt;
