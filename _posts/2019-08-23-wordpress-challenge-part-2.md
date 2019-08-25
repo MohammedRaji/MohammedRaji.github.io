@@ -71,3 +71,8 @@ Now view your first created site at this link ```http://localhost/wordpress/```
 
 
 ***Congratulations*** to you, you have created and installed the first WordPress theme, If you encounter any problems with the installation, you can leave it in a comment.
+
+
+
+
+و الأن مع الدرس الثاني، و كنتكمو فيه على مكونات ثيم و ووردبريس و تثبيته، كما تم إنشاء ثيم بسيط جدا لفهم اساسيات برمجة ووردبريس، 
