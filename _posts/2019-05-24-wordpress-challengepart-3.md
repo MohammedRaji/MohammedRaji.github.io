@@ -33,5 +33,5 @@ displays a list or summary of posts matching a search , Searching is an importan
 shows series of posts for categories, tags, dates, and authors. 
 
 
-After recognizing the various page views, in next part we will start coding our the theme, keep ready :)
+After recognizing the various page views, in next part we will start coding our theme, keep ready :)
 
