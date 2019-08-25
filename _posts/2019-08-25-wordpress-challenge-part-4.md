@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "WordPress Learning Challenge (Part 4)"
-date:   2019-08-24 23:29:30 +0530
+date:   2019-08-26 00:15:30 +0530
 categories: [WordPress, Guides]
 ---
 
