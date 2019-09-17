@@ -21,6 +21,7 @@ Raji:
   style: black
   showNav: false
   showPicker: true
+  analytics_id: UA-148166255-1
 
   # generate social links in footer
   social_links:
