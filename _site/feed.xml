@@ -1,29 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-08-26T00:15:40+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Raji’s blog</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-</subtitle><author><name>GitHub User</name></author><entry><title type="html">WordPress Learning Challenge (Part 3)</title><link href="http://localhost:4000/posts/wordpress-challengepart-3/" rel="alternate" type="text/html" title="WordPress Learning Challenge (Part 3)" /><published>2019-08-24T18:59:30+01:00</published><updated>2019-08-24T18:59:30+01:00</updated><id>http://localhost:4000/posts/wordpress-challengepart-3</id><content type="html" xml:base="http://localhost:4000/posts/wordpress-challengepart-3/">&lt;p&gt;On previous part we seen the wordpress theme anatomy, Now for more understanding how to work wordpress, we will talk about different Page Views and what contain each page.&lt;/p&gt;
-
-&lt;h4 id=&quot;1-home-page&quot;&gt;1. home page.&lt;/h4&gt;
-
-&lt;p&gt;the Home Page  usually at the root URL of your domain, and portail of your site, for a simple blogging theme is contain &lt;strong&gt;header&lt;/strong&gt;, &lt;strong&gt;sidebar&lt;/strong&gt;, &lt;strong&gt;posts&lt;/strong&gt; and &lt;strong&gt;footer&lt;/strong&gt;, like this example.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/posts/3/1.png&quot; alt=&quot;installation&quot; /&gt;&lt;/p&gt;
-
-&lt;h5 id=&quot;2-single-posts&quot;&gt;2. Single posts&lt;/h5&gt;
-
-&lt;p&gt;displays one post at a time, usually in its entirety, and other “meta”
-information about the post, as well as the functionality required for displaying the
-comments area and comment form.&lt;/p&gt;
-
-&lt;h5 id=&quot;3-page-views&quot;&gt;3. Page Views&lt;/h5&gt;
-
-&lt;p&gt;Pages are static and are not listed by date. Pages do not support tags or categories. for example an About page, Privacy Policy Page and Terms and conditions …&lt;/p&gt;
-
-&lt;h5 id=&quot;4-search-results&quot;&gt;4. Search Results&lt;/h5&gt;
-&lt;p&gt;displays a list or summary of posts matching a search , Searching is an important tool – people want to be able to find your old posts, and a search page offers a dedicated space for doing that. You can use a search page to offer advice and helpful hints, such as which posts are the most popular, where your FAQ is, how to contact you if posts cannot be found or how to use search operators.&lt;/p&gt;
-
-&lt;h5 id=&quot;5-archive-page&quot;&gt;5. Archive page&lt;/h5&gt;
-&lt;p&gt;shows series of posts for categories, tags, dates, and authors.&lt;/p&gt;
-
-&lt;p&gt;After recognizing the various page views, in next part we will start coding our theme, keep ready :)&lt;/p&gt;</content><author><name>GitHub User</name></author><summary type="html">On previous part we seen the wordpress theme anatomy, Now for more understanding how to work wordpress, we will talk about different Page Views and what contain each page.</summary></entry><entry><title type="html">WordPress Learning Challenge (Part 4)</title><link href="http://localhost:4000/posts/wordpress-challenge-part-4/" rel="alternate" type="text/html" title="WordPress Learning Challenge (Part 4)" /><published>2019-08-24T18:59:30+01:00</published><updated>2019-08-24T18:59:30+01:00</updated><id>http://localhost:4000/posts/wordpress-challenge-part-4</id><content type="html" xml:base="http://localhost:4000/posts/wordpress-challenge-part-4/">&lt;p&gt;To start coding we must know what we want, for our example we coding a simple blogging theme, we start by home page, header section, this section contain &lt;strong&gt;&lt;em&gt;title&lt;/em&gt;&lt;/strong&gt; and &lt;strong&gt;&lt;em&gt;site description&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-11-10T22:00:45+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Raji’s blog</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+</subtitle><author><name>GitHub User</name></author><entry><title type="html">WordPress Learning Challenge (Part 4)</title><link href="http://localhost:4000/posts/wordpress-challenge-part-4/" rel="alternate" type="text/html" title="WordPress Learning Challenge (Part 4)" /><published>2019-08-25T19:45:30+01:00</published><updated>2019-08-25T19:45:30+01:00</updated><id>http://localhost:4000/posts/wordpress-challenge-part-4</id><content type="html" xml:base="http://localhost:4000/posts/wordpress-challenge-part-4/">&lt;p&gt;To start coding we must know what we want, for our example we coding a simple blogging theme, we start by home page, header section, this section contain &lt;strong&gt;&lt;em&gt;title&lt;/em&gt;&lt;/strong&gt; and &lt;strong&gt;&lt;em&gt;site description&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;let’s go, in our theme folder &lt;code class=&quot;highlighter-rouge&quot;&gt;wp-challenge&lt;/code&gt;, add &lt;code class=&quot;highlighter-rouge&quot;&gt;header.php&lt;/code&gt; file like this:&lt;/p&gt;
 
@@ -69,7 +45,31 @@ comments area and comment form.&lt;/p&gt;
 
 &lt;p&gt;I hope this article gave you a clear overview of how to create header section for WP theme, and that you found it useful.&lt;/p&gt;
 
-&lt;p&gt;If you have a question you can leave it in a comment.&lt;/p&gt;</content><author><name>GitHub User</name></author><summary type="html">To start coding we must know what we want, for our example we coding a simple blogging theme, we start by home page, header section, this section contain title and site description.</summary></entry><entry><title type="html">WordPress Learning Challenge (Part 2)</title><link href="http://localhost:4000/posts/wordpress-challenge-part-2/" rel="alternate" type="text/html" title="WordPress Learning Challenge (Part 2) " /><published>2019-08-23T09:59:30+01:00</published><updated>2019-08-23T09:59:30+01:00</updated><id>http://localhost:4000/posts/wordpress-challenge-part-2</id><content type="html" xml:base="http://localhost:4000/posts/wordpress-challenge-part-2/">&lt;p&gt;After installing WordPress in previous &lt;a href=&quot;https://mohammedraji.github.io/posts/worpress-challenge-part-1&quot;&gt;part&lt;/a&gt;, It is time for us to start taking a close look at how themes are built and how they work.&lt;/p&gt;
+&lt;p&gt;If you have a question you can leave it in a comment.&lt;/p&gt;</content><author><name>GitHub User</name></author><summary type="html">To start coding we must know what we want, for our example we coding a simple blogging theme, we start by home page, header section, this section contain title and site description.</summary></entry><entry><title type="html">WordPress Learning Challenge (Part 3)</title><link href="http://localhost:4000/posts/wordpress-challengepart-3/" rel="alternate" type="text/html" title="WordPress Learning Challenge (Part 3)" /><published>2019-08-24T18:59:30+01:00</published><updated>2019-08-24T18:59:30+01:00</updated><id>http://localhost:4000/posts/wordpress-challengepart-3</id><content type="html" xml:base="http://localhost:4000/posts/wordpress-challengepart-3/">&lt;p&gt;On previous part we seen the wordpress theme anatomy, Now for more understanding how to work wordpress, we will talk about different Page Views and what contain each page.&lt;/p&gt;
+
+&lt;h4 id=&quot;1-home-page&quot;&gt;1. home page.&lt;/h4&gt;
+
+&lt;p&gt;the Home Page  usually at the root URL of your domain, and portail of your site, for a simple blogging theme is contain &lt;strong&gt;header&lt;/strong&gt;, &lt;strong&gt;sidebar&lt;/strong&gt;, &lt;strong&gt;posts&lt;/strong&gt; and &lt;strong&gt;footer&lt;/strong&gt;, like this example.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/3/1.png&quot; alt=&quot;installation&quot; /&gt;&lt;/p&gt;
+
+&lt;h5 id=&quot;2-single-posts&quot;&gt;2. Single posts&lt;/h5&gt;
+
+&lt;p&gt;displays one post at a time, usually in its entirety, and other “meta”
+information about the post, as well as the functionality required for displaying the
+comments area and comment form.&lt;/p&gt;
+
+&lt;h5 id=&quot;3-page-views&quot;&gt;3. Page Views&lt;/h5&gt;
+
+&lt;p&gt;Pages are static and are not listed by date. Pages do not support tags or categories. for example an About page, Privacy Policy Page and Terms and conditions …&lt;/p&gt;
+
+&lt;h5 id=&quot;4-search-results&quot;&gt;4. Search Results&lt;/h5&gt;
+&lt;p&gt;displays a list or summary of posts matching a search , Searching is an important tool – people want to be able to find your old posts, and a search page offers a dedicated space for doing that. You can use a search page to offer advice and helpful hints, such as which posts are the most popular, where your FAQ is, how to contact you if posts cannot be found or how to use search operators.&lt;/p&gt;
+
+&lt;h5 id=&quot;5-archive-page&quot;&gt;5. Archive page&lt;/h5&gt;
+&lt;p&gt;shows series of posts for categories, tags, dates, and authors.&lt;/p&gt;
+
+&lt;p&gt;After recognizing the various page views, in next part we will start coding our theme, keep ready :)&lt;/p&gt;</content><author><name>GitHub User</name></author><summary type="html">On previous part we seen the wordpress theme anatomy, Now for more understanding how to work wordpress, we will talk about different Page Views and what contain each page.</summary></entry><entry><title type="html">WordPress Learning Challenge (Part 2)</title><link href="http://localhost:4000/posts/wordpress-challenge-part-2/" rel="alternate" type="text/html" title="WordPress Learning Challenge (Part 2) " /><published>2019-08-23T09:59:30+01:00</published><updated>2019-08-23T09:59:30+01:00</updated><id>http://localhost:4000/posts/wordpress-challenge-part-2</id><content type="html" xml:base="http://localhost:4000/posts/wordpress-challenge-part-2/">&lt;p&gt;After installing WordPress in previous &lt;a href=&quot;https://mohammedraji.github.io/posts/worpress-challenge-part-1&quot;&gt;part&lt;/a&gt;, It is time for us to start taking a close look at how themes are built and how they work.&lt;/p&gt;
 
 &lt;p&gt;Of course, the look of all themes is different. But if you were to download many 
 different WordPress themes and open the folders side by side, you’ll see the same hierarchy. There are a couple of required files and a number of files you will likely find in all themes.&lt;/p&gt;
