@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-03-21T22:16:52+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Raji’s blog</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-03-21T22:21:03+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Raji’s blog</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 </subtitle><author><name>GitHub User</name></author><entry><title type="html">How to get Instagram Graph API access token</title><link href="http://localhost:4000/posts/get-instagram-graph-API/" rel="alternate" type="text/html" title="How to get Instagram Graph API access token " /><published>2020-03-20T19:49:30+01:00</published><updated>2020-03-20T19:49:30+01:00</updated><id>http://localhost:4000/posts/get-instagram-graph-API</id><content type="html" xml:base="http://localhost:4000/posts/get-instagram-graph-API/">&lt;p&gt;Instagram will be disabling the final Instagram Legacy API permission (“Basic”) on March 31, 2020. As of March 31, 2020, all Legacy API capabilities will be fulfilled by the Instagram Graph API and the Instagram Basic Display API.&lt;/p&gt;
 
 &lt;p&gt;And all Instagram Feed will be disbling, and you must to update your widget to work with the new Instagram API.&lt;/p&gt;
@@ -27,7 +27,8 @@
 
 &lt;p&gt;Click Basic Display, scroll to the bottom of the page, then click Create New App.&lt;/p&gt;
 
-&lt;p&gt;In the form that appears, complete each section using the guidelines below.&lt;/p&gt;
+&lt;p&gt;In the form that appears, complete each section using the guidelines below.
+&lt;img src=&quot;/assets/img/posts/5/add-instagram-app.png&quot; alt=&quot;Add instagram tester&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;step-3-add-an-instagram-test-user&quot;&gt;Step 3: Add an Instagram Test User&lt;/h3&gt;
 

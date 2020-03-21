@@ -35,6 +35,7 @@ Click Products, locate the Instagram product, and click Set Up to add it to your
 Click Basic Display, scroll to the bottom of the page, then click Create New App.
 
 In the form that appears, complete each section using the guidelines below.
+![Add instagram tester]({{site.baseurl}}/assets/img/posts/5/add-instagram-app.png)
 
 ### Step 3: Add an Instagram Test User
 
