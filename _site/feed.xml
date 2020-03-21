@@ -1,5 +1,53 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-11-10T22:00:45+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Raji’s blog</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-</subtitle><author><name>GitHub User</name></author><entry><title type="html">WordPress Learning Challenge (Part 4)</title><link href="http://localhost:4000/posts/wordpress-challenge-part-4/" rel="alternate" type="text/html" title="WordPress Learning Challenge (Part 4)" /><published>2019-08-25T19:45:30+01:00</published><updated>2019-08-25T19:45:30+01:00</updated><id>http://localhost:4000/posts/wordpress-challenge-part-4</id><content type="html" xml:base="http://localhost:4000/posts/wordpress-challenge-part-4/">&lt;p&gt;To start coding we must know what we want, for our example we coding a simple blogging theme, we start by home page, header section, this section contain &lt;strong&gt;&lt;em&gt;title&lt;/em&gt;&lt;/strong&gt; and &lt;strong&gt;&lt;em&gt;site description&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-03-21T22:16:52+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Raji’s blog</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+</subtitle><author><name>GitHub User</name></author><entry><title type="html">How to get Instagram Graph API access token</title><link href="http://localhost:4000/posts/get-instagram-graph-API/" rel="alternate" type="text/html" title="How to get Instagram Graph API access token " /><published>2020-03-20T19:49:30+01:00</published><updated>2020-03-20T19:49:30+01:00</updated><id>http://localhost:4000/posts/get-instagram-graph-API</id><content type="html" xml:base="http://localhost:4000/posts/get-instagram-graph-API/">&lt;p&gt;Instagram will be disabling the final Instagram Legacy API permission (“Basic”) on March 31, 2020. As of March 31, 2020, all Legacy API capabilities will be fulfilled by the Instagram Graph API and the Instagram Basic Display API.&lt;/p&gt;
+
+&lt;p&gt;And all Instagram Feed will be disbling, and you must to update your widget to work with the new Instagram API.&lt;/p&gt;
+
+&lt;p&gt;For that, Follow this bellow steps to get Access Token to use it to get instgram feed in your website or blog.&lt;/p&gt;
+
+&lt;h3 id=&quot;before-you-start&quot;&gt;Before You Start&lt;/h3&gt;
+&lt;p&gt;You will need:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A &lt;a href=&quot;https://developers.facebook.com/&quot;&gt;Facebook Developer&lt;/a&gt; Account&lt;/li&gt;
+  &lt;li&gt;An &lt;a href=&quot;http://instagram.com&quot;&gt;Instagram&lt;/a&gt; account with media.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;step-1--register-application&quot;&gt;Step 1 — Register Application&lt;/h3&gt;
+
+&lt;p&gt;Go to &lt;a href=&quot;https://developers.facebook.com/&quot;&gt;developers.facebook.com&lt;/a&gt;, click My Apps, and create a new app.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/5/create-app.png&quot; alt=&quot;Add instagram tester&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;step-2-configure-instagram-basic-display&quot;&gt;Step 2: Configure Instagram Basic Display&lt;/h3&gt;
+
+&lt;p&gt;Click Products, locate the Instagram product, and click Set Up to add it to your app.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/5/instagram-setting.png&quot; alt=&quot;Add instagram tester&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Click Basic Display, scroll to the bottom of the page, then click Create New App.&lt;/p&gt;
+
+&lt;p&gt;In the form that appears, complete each section using the guidelines below.&lt;/p&gt;
+
+&lt;h3 id=&quot;step-3-add-an-instagram-test-user&quot;&gt;Step 3: Add an Instagram Test User&lt;/h3&gt;
+
+&lt;p&gt;Navigate to Roles &amp;gt; Roles and scroll down to the Instagram Testers section. Click Add Instagram Testers and enter your Instagram account’s username and send the invitation.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/5/add-instagram-tester.png&quot; alt=&quot;Add instagram tester&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Open a new web browser and go to &lt;a href=&quot;http://instagram.com&quot;&gt;Instagram&lt;/a&gt; and sign into your Instagram account that you just invited. Navigate to (Profile Icon) &amp;gt; Edit Profile &amp;gt; Apps and Websites &amp;gt; Tester Invites and accept the invitation.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/5/accept-test-invitation.png&quot; alt=&quot;Accept Invitation&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;step-4-generate-access-token&quot;&gt;Step 4: Generate Access Token&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/5/genarate-access-token.png&quot; alt=&quot;icon&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/5/access-token-generated.png&quot; alt=&quot;icon&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Instagram API will destroy on 21 March 2020, and all Instagram Feed will dont work, as a developer or site owner you must change your accees token.&lt;/p&gt;
+
+&lt;p&gt;Instagram changed up the API to require Access Tokens to use even the most basic ‘media’ endpoint requests. This is a quick breakdown on the steps to get the Access Token on your local machine… and you don’t have to be a coder or developer to follow most of these steps and fix your Instagram feed.&lt;/p&gt;
+
+&lt;p&gt;I hope this article gave you a clear overview of how to create header section for WP theme, and that you found it useful.&lt;/p&gt;</content><author><name>GitHub User</name></author><summary type="html">Instagram will be disabling the final Instagram Legacy API permission (“Basic”) on March 31, 2020. As of March 31, 2020, all Legacy API capabilities will be fulfilled by the Instagram Graph API and the Instagram Basic Display API.</summary></entry><entry><title type="html">WordPress Learning Challenge (Part 4)</title><link href="http://localhost:4000/posts/wordpress-challenge-part-4/" rel="alternate" type="text/html" title="WordPress Learning Challenge (Part 4)" /><published>2019-08-25T19:45:30+01:00</published><updated>2019-08-25T19:45:30+01:00</updated><id>http://localhost:4000/posts/wordpress-challenge-part-4</id><content type="html" xml:base="http://localhost:4000/posts/wordpress-challenge-part-4/">&lt;p&gt;To start coding we must know what we want, for our example we coding a simple blogging theme, we start by home page, header section, this section contain &lt;strong&gt;&lt;em&gt;title&lt;/em&gt;&lt;/strong&gt; and &lt;strong&gt;&lt;em&gt;site description&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;let’s go, in our theme folder &lt;code class=&quot;highlighter-rouge&quot;&gt;wp-challenge&lt;/code&gt;, add &lt;code class=&quot;highlighter-rouge&quot;&gt;header.php&lt;/code&gt; file like this:&lt;/p&gt;
 
