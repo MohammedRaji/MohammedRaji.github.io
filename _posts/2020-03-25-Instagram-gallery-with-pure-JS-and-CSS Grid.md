@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "An Instagram gallery with pure JavaScript and CSS Grid"
-date:   2020-03-26 17:29:30 +0530
+date:   2020-03-25 10:29:30 +0530
 featured-img: shane-rounce-205187
 categories: [Instagram, Gallery]
 ---
