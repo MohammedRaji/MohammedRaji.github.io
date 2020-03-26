@@ -1,5 +1,82 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-03-21T22:21:03+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Raji’s blog</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-</subtitle><author><name>GitHub User</name></author><entry><title type="html">How to get Instagram Graph API access token</title><link href="http://localhost:4000/posts/get-instagram-graph-API/" rel="alternate" type="text/html" title="How to get Instagram Graph API access token " /><published>2020-03-20T19:49:30+01:00</published><updated>2020-03-20T19:49:30+01:00</updated><id>http://localhost:4000/posts/get-instagram-graph-API</id><content type="html" xml:base="http://localhost:4000/posts/get-instagram-graph-API/">&lt;p&gt;Instagram will be disabling the final Instagram Legacy API permission (“Basic”) on March 31, 2020. As of March 31, 2020, all Legacy API capabilities will be fulfilled by the Instagram Graph API and the Instagram Basic Display API.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-03-26T18:43:37+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Raji’s blog</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+</subtitle><author><name>GitHub User</name></author><entry><title type="html">An Instagram gallery with pure JavaScript and CSS Grid</title><link href="http://localhost:4000/posts/Instagram-gallery-with-pure-JS-and-CSS-Grid/" rel="alternate" type="text/html" title="An Instagram gallery with pure JavaScript and CSS Grid" /><published>2020-03-26T12:59:30+01:00</published><updated>2020-03-26T12:59:30+01:00</updated><id>http://localhost:4000/posts/Instagram-gallery-with-pure-JS-and-CSS%20Grid</id><content type="html" xml:base="http://localhost:4000/posts/Instagram-gallery-with-pure-JS-and-CSS-Grid/">&lt;p&gt;As everyone knows Instagram will be replacing his current instagram API  by Instagrm graph API on March 31, 2020.
+and in this article I will share with you, a JS script that support the Instagram Graph API.&lt;/p&gt;
+
+&lt;p&gt;I hope this article will help anyone else who wants to build a simple display of their own Instagram feed.&lt;/p&gt;
+
+&lt;h4 id=&quot;getting-your-access-token&quot;&gt;Getting your access token.&lt;/h4&gt;
+&lt;p&gt;To get your access token read this &lt;a href=&quot;/posts/get-instagram-graph-API/&quot;&gt;article&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;setting-up-the-html-page&quot;&gt;Setting up the HTML page&lt;/h4&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;title&amp;gt;&lt;/span&gt;Instagram Gallery&lt;span class=&quot;nt&quot;&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+ &lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;stylesheet&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;style.css&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+  
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;instagram&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;script.js&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h4 id=&quot;the-javascript-code&quot;&gt;The Javascript code&lt;/h4&gt;
+
+&lt;p&gt;There’s a ton of ways to get data from URL, but I prefer to Javascript native Fetch API. Here’s a very simple example that simply logs the data, and insert to the DOM.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;access_token&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'IGQVJYcXNDNEQ5OWh5b3F4VkRqTTA1aTlhMU1zMTctNFprRlAxQ253anA4Ul82V08zTG1UQ1FiUldUWkhzelhUZAjUtSUJMbk1JMG94NlFsMUdKQUVnZAjBBaFZALU0d1SU9iWVlSc1ZAveV8tbDhPOTVGOAZDZD'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt;  &lt;span class=&quot;nx&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'https://graph.instagram.com/me/media?fields=media_count,permalink,media_url&amp;amp;access_token='&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;access_token&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+
+&lt;span class=&quot;k&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;instgramfeed&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;try&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;response&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kr&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;fetch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kr&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;json&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+    
+        &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;html&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;''&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;target&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;querySelector&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'#instagram'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    
+        &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;html&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;`&amp;lt;div class=&quot;instagram-item&quot;&amp;gt;
+                       &amp;lt;a href=&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;permalink&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&amp;gt;
+                            &amp;lt;img src=&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;media_url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;/&amp;gt;
+                       &amp;lt;/a&amp;gt;
+                    &amp;lt;/div&amp;gt;`&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;target&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;innerHTML&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;catch&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// TypeError: failed to fetch&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Error Loading feeds! Maybe because your access token is wrong, you dont set feeds as full or you have a bad connexion!'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;  
+
+&lt;span class=&quot;nx&quot;&gt;instgramfeed&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h4 id=&quot;the-css-code&quot;&gt;The CSS code&lt;/h4&gt;
+
+&lt;p&gt;Once again, we add some styling to our StyleSheet to make our feed look fancy.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nf&quot;&gt;#instagram&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;grid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;py&quot;&gt;grid-template-columns&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;repeat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;auto-fill&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;33.333333%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nf&quot;&gt;#instagram&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.instagram-item&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;10px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;img&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;object-fit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cover&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Congratulations! You’ve built a Instagram feed (&lt;a href=&quot;/DEMO/instagram/&quot;&gt;DEMO&lt;/a&gt;) to use it in your site.&lt;/p&gt;
+
+&lt;p&gt;For more information about Instagram Graph API take a look on official documentation &lt;a href=&quot;https://developers.facebook.com/docs/instagram-basic-display-api/guides/getting-profiles-and-media&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</content><author><name>GitHub User</name></author><summary type="html">As everyone knows Instagram will be replacing his current instagram API by Instagrm graph API on March 31, 2020. and in this article I will share with you, a JS script that support the Instagram Graph API.</summary></entry><entry><title type="html">How to get Instagram Graph API access token</title><link href="http://localhost:4000/posts/get-instagram-graph-API/" rel="alternate" type="text/html" title="How to get Instagram Graph API access token " /><published>2020-03-20T19:49:30+01:00</published><updated>2020-03-20T19:49:30+01:00</updated><id>http://localhost:4000/posts/get-instagram-graph-API</id><content type="html" xml:base="http://localhost:4000/posts/get-instagram-graph-API/">&lt;p&gt;Instagram will be disabling the final Instagram Legacy API permission (“Basic”) on March 31, 2020. As of March 31, 2020, all Legacy API capabilities will be fulfilled by the Instagram Graph API and the Instagram Basic Display API.&lt;/p&gt;
 
 &lt;p&gt;And all Instagram Feed will be disbling, and you must to update your widget to work with the new Instagram API.&lt;/p&gt;
 
@@ -44,11 +121,7 @@
 &lt;p&gt;&lt;img src=&quot;/assets/img/posts/5/genarate-access-token.png&quot; alt=&quot;icon&quot; /&gt;
 &lt;img src=&quot;/assets/img/posts/5/access-token-generated.png&quot; alt=&quot;icon&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Instagram API will destroy on 21 March 2020, and all Instagram Feed will dont work, as a developer or site owner you must change your accees token.&lt;/p&gt;
-
-&lt;p&gt;Instagram changed up the API to require Access Tokens to use even the most basic ‘media’ endpoint requests. This is a quick breakdown on the steps to get the Access Token on your local machine… and you don’t have to be a coder or developer to follow most of these steps and fix your Instagram feed.&lt;/p&gt;
-
-&lt;p&gt;I hope this article gave you a clear overview of how to create header section for WP theme, and that you found it useful.&lt;/p&gt;</content><author><name>GitHub User</name></author><summary type="html">Instagram will be disabling the final Instagram Legacy API permission (“Basic”) on March 31, 2020. As of March 31, 2020, all Legacy API capabilities will be fulfilled by the Instagram Graph API and the Instagram Basic Display API.</summary></entry><entry><title type="html">WordPress Learning Challenge (Part 4)</title><link href="http://localhost:4000/posts/wordpress-challenge-part-4/" rel="alternate" type="text/html" title="WordPress Learning Challenge (Part 4)" /><published>2019-08-25T19:45:30+01:00</published><updated>2019-08-25T19:45:30+01:00</updated><id>http://localhost:4000/posts/wordpress-challenge-part-4</id><content type="html" xml:base="http://localhost:4000/posts/wordpress-challenge-part-4/">&lt;p&gt;To start coding we must know what we want, for our example we coding a simple blogging theme, we start by home page, header section, this section contain &lt;strong&gt;&lt;em&gt;title&lt;/em&gt;&lt;/strong&gt; and &lt;strong&gt;&lt;em&gt;site description&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Congratulations! You got the Access Token successfully, and you can use it to get data from instagram.&lt;/p&gt;</content><author><name>GitHub User</name></author><summary type="html">Instagram will be disabling the final Instagram Legacy API permission (“Basic”) on March 31, 2020. As of March 31, 2020, all Legacy API capabilities will be fulfilled by the Instagram Graph API and the Instagram Basic Display API.</summary></entry><entry><title type="html">WordPress Learning Challenge (Part 4)</title><link href="http://localhost:4000/posts/wordpress-challenge-part-4/" rel="alternate" type="text/html" title="WordPress Learning Challenge (Part 4)" /><published>2019-08-25T19:45:30+01:00</published><updated>2019-08-25T19:45:30+01:00</updated><id>http://localhost:4000/posts/wordpress-challenge-part-4</id><content type="html" xml:base="http://localhost:4000/posts/wordpress-challenge-part-4/">&lt;p&gt;To start coding we must know what we want, for our example we coding a simple blogging theme, we start by home page, header section, this section contain &lt;strong&gt;&lt;em&gt;title&lt;/em&gt;&lt;/strong&gt; and &lt;strong&gt;&lt;em&gt;site description&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;let’s go, in our theme folder &lt;code class=&quot;highlighter-rouge&quot;&gt;wp-challenge&lt;/code&gt;, add &lt;code class=&quot;highlighter-rouge&quot;&gt;header.php&lt;/code&gt; file like this:&lt;/p&gt;
 

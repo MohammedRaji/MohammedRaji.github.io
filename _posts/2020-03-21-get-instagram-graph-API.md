@@ -6,7 +6,6 @@ categories: [Instagram, API]
 ---
 
 
-
 Instagram will be disabling the final Instagram Legacy API permission ("Basic") on March 31, 2020. As of March 31, 2020, all Legacy API capabilities will be fulfilled by the Instagram Graph API and the Instagram Basic Display API.
 
 And all Instagram Feed will be disbling, and you must to update your widget to work with the new Instagram API.
@@ -52,25 +51,7 @@ Open a new web browser and go to [Instagram][instagram] and sign into your Insta
 ![icon]({{ site.baseurl }}/assets/img/posts/5/access-token-generated.png)
 
 
-
-
-
-
-
-Instagram API will destroy on 21 March 2020, and all Instagram Feed will dont work, as a developer or site owner you must change your accees token.
-
-Instagram changed up the API to require Access Tokens to use even the most basic ‘media’ endpoint requests. This is a quick breakdown on the steps to get the Access Token on your local machine… and you don’t have to be a coder or developer to follow most of these steps and fix your Instagram feed.
-
-
-
-
-
-
-
- I hope this article gave you a clear overview of how to create header section for WP theme, and that you found it useful.
-
-
-
+Congratulations! You got the Access Token successfully, and you can use it to get data from instagram.
 
 
 [facebook]: https://developers.facebook.com/
