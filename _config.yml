@@ -40,5 +40,5 @@ plugins:
   - jekyll-seo-tag
 #  - jekyll-feed
 
-markdown: kramdown
+#markdown: kramdown
 highlighter: rouge
