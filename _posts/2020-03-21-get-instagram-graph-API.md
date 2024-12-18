@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to get Instagram Graph API access token "
+title: "How to get Instagram Graph API access to"
 date:   2020-03-21 00:19:30 +0530
 categories: [Instagram, API]
 ---
